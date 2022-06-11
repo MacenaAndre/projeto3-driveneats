@@ -25,16 +25,16 @@
         <div class="menu-pratos">
           <h3>Primeiro, seu prato</h3>
           <div class="container">
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao1()">
               <img src="./imagens.projeto3/frango_yin_yang 1.png" alt="" />
               <h4>Executivo picanha</h4>
               <h5>Arroz, Feijão, Farofa, Fritas e picanha</h5>
               <div>
                 <h6>R$14,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao2()">
               <img
                 src="./imagens.projeto3/Estrogonofe-frango-Baixa-2.jpg"
                 alt=""
@@ -43,16 +43,16 @@
               <h5>Strogonoff, Arroz e Batata-palha</h5>
               <div>
                 <h6>R$16,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao3()">
               <img src="./imagens.projeto3/macarrao_com_calabresa.jpg" alt="" />
               <h4>Macarrão</h4>
               <h5>Macarrão, Calabresa e Molho sugo</h5>
-              <div>
+               <div>
                 <h6>R$12,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
           </div>
@@ -60,31 +60,31 @@
         <div class="menu-pratos">
           <h3>Agora, sua bebida</h3>
           <div class="container">
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao4()">
               <img src="./imagens.projeto3/coquinha_gelada 1.png" alt="" />
               <h4>Coquinha gelada</h4>
               <h5>Latinha de 350ml</h5>
               <div>
                 <h6>R$6,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao5()">
               <img src="./imagens.projeto3/garrafadagua.jpg" alt="" />
               <h4>tipo</h4>
               <h5>Garrafinha de 500ml</h5>
               <div>
                 <h6>R$3,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao6()">
               <img src="./imagens.projeto3/laranjinha.jpg" alt="" />
               <h4>Suco</h4>
               <h5>Suco de Laranja</h5>
               <div>
                 <h6>5,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
           </div>
@@ -92,16 +92,16 @@
         <div class="menu-pratos">
           <h3>Por fim, sua sobremesa</h3>
           <div class="container">
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao7()">
               <img src="./imagens.projeto3/pudim 1.png" alt="" />
               <h4>Pudim</h4>
               <h5>Maravilhoso Pudim</h5>
               <div>
                 <h6>R$4,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao8()">
               <img
                 src="./imagens.projeto3/torta-mousse-de-chocolate.jpg"
                 alt=""
@@ -110,16 +110,16 @@
               <h5>Fatia de 250g</h5>
               <div>
                 <h6>R$8,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar">
+            <div class="pratos selecionar" onclick="opcao9()">
               <img src="./imagens.projeto3/copos-acai.jpg" alt="" />
               <h4>Açaí</h4>
               <h5>Açaí com Frutas</h5>
               <div>
                 <h6>R$7,90</h6>
-                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
           </div>
@@ -162,11 +162,6 @@
       </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script>
-      function opcao1() {
-        let picanha = document.querySelector(".topo")
-        picanha.classList.toggle("selecionado")
-      }
-    </script>
+    <script src="./codigo.js"></script>
   </body>
 </html>

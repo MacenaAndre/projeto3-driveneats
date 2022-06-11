@@ -99,7 +99,7 @@ h6 {
 }
 ion-icon {
   font-size: 16px;
-  color: #32B72F;
+  color: #ffffff;
 }
 .rodape {
   height: 92px;
@@ -207,4 +207,7 @@ text-align: left;
 }
 .selecionar {
   box-shadow: none;
+}
+.selecionar-icone {
+  color: #32B72F;
 }
