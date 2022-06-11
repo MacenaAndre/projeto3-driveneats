@@ -146,10 +146,10 @@ ion-icon {
   color: #ffffff;
   border-radius: 9px;
   width: 90%;
-  max-width: 560px;
+  max-width: 542px;
   height: 340px;
   position: fixed;
-  left: 23px;
+  left: 28px;
   top: 300px;
   display: flex;
   flex-direction: column;
@@ -165,7 +165,7 @@ ion-icon {
   max-width: 550px;
  
 }
-.pedido {
+.pedido .valor {
   font-size: 22px;
   font-weight: 400;
 }

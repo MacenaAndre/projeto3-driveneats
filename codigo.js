@@ -11,7 +11,6 @@
     const b = document.querySelector(".menu-pratos:first-child .pratos:nth-child(3) ion-icon");
     a.classList.add("selecionar");
     b.classList.remove("selecionar-icone");
-
   }
   function opcao2() {
     const borda = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2)");
@@ -125,7 +124,29 @@
     a.classList.add("selecionar");
     b.classList.remove("selecionar-icone");
   }
+  function fecharPedido() {
+    const prato1 = document.querySelector(".menu-pratos:first-child .selecionar:first-child");
+    const prato2 = document.querySelector(".menu-pratos:first-child .selecionar:nth-child(2)");
+    const prato3 = document.querySelector(".menu-pratos:first-child .selecionar:nth-child(3)");
+    const bebida1 = document.querySelector(".menu-pratos:nth-child(2) .selcionar:first-child");
+    const bebida2 = document.querySelector(".menu-pratos:nth-child(2) .selecionar:nth-child(2)");
+    const bebida3 = document.querySelector(".menu-pratos:nth-child(2) .selceionar:nth-child(3)");
+    const sobremesa1 = document.querySelector(".menu-pratos:last-child .selecionar:first-child");
+    const sobremesa2 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(2)");
+    const sobremesa3 = document.querySelector(".menu-pratos:last-child .selecionar:last-child");
 
-  
+    if(prato1 === null || prato2 === null || prato3 === null) {
+        if(bebida1 === null || bebida2 === null || bebida3 === null) {
+            if(sobremesa1 === null || sobremesa2 === null || sobremesa3 === null) {
+                document.querySelector(".aguardar-pedido").classList.add("escondido");
+                document.querySelector(".fechar-pedido").classList.remove("escondido");
+            } else {
+                document.querySelector(".aguardar-pedido").classList.remove("escondido");
+                document.querySelector(".fechar-pedido").classList.add("escondido");
+            }
+        }
+    }
+    
+  }  
   
   

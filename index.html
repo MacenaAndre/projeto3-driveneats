@@ -25,7 +25,7 @@
         <div class="menu-pratos">
           <h3>Primeiro, seu prato</h3>
           <div class="container">
-            <div class="pratos selecionar" onclick="opcao1()">
+            <div class="pratos selecionar" onclick="opcao1(); fecharPedido();">
               <img src="./imagens.projeto3/frango_yin_yang 1.png" alt="" />
               <h4>Executivo picanha</h4>
               <h5>Arroz, Feijão, Farofa, Fritas e picanha</h5>
@@ -34,7 +34,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao2()">
+            <div class="pratos selecionar" onclick="opcao2(); fecharPedido();">
               <img
                 src="./imagens.projeto3/Estrogonofe-frango-Baixa-2.jpg"
                 alt=""
@@ -46,7 +46,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao3()">
+            <div class="pratos selecionar" onclick="opcao3(); fecharPedido();">
               <img src="./imagens.projeto3/macarrao_com_calabresa.jpg" alt="" />
               <h4>Macarrão</h4>
               <h5>Macarrão, Calabresa e Molho sugo</h5>
@@ -60,7 +60,7 @@
         <div class="menu-pratos">
           <h3>Agora, sua bebida</h3>
           <div class="container">
-            <div class="pratos selecionar" onclick="opcao4()">
+            <div class="pratos selecionar" onclick="opcao4(); fecharPedido();">
               <img src="./imagens.projeto3/coquinha_gelada 1.png" alt="" />
               <h4>Coquinha gelada</h4>
               <h5>Latinha de 350ml</h5>
@@ -69,7 +69,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao5()">
+            <div class="pratos selecionar" onclick="opcao5(); fecharPedido();">
               <img src="./imagens.projeto3/garrafadagua.jpg" alt="" />
               <h4>tipo</h4>
               <h5>Garrafinha de 500ml</h5>
@@ -78,7 +78,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao6()">
+            <div class="pratos selecionar" onclick="opcao6(); fecharPedido();">
               <img src="./imagens.projeto3/laranjinha.jpg" alt="" />
               <h4>Suco</h4>
               <h5>Suco de Laranja</h5>
@@ -92,7 +92,7 @@
         <div class="menu-pratos">
           <h3>Por fim, sua sobremesa</h3>
           <div class="container">
-            <div class="pratos selecionar" onclick="opcao7()">
+            <div class="pratos selecionar" onclick="opcao7(); fecharPedido();">
               <img src="./imagens.projeto3/pudim 1.png" alt="" />
               <h4>Pudim</h4>
               <h5>Maravilhoso Pudim</h5>
@@ -101,7 +101,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao8()">
+            <div class="pratos selecionar" onclick="opcao8(); fecharPedido();">
               <img
                 src="./imagens.projeto3/torta-mousse-de-chocolate.jpg"
                 alt=""
@@ -113,7 +113,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao9()">
+            <div class="pratos selecionar" onclick="opcao9(); fecharPedido()">
               <img src="./imagens.projeto3/copos-acai.jpg" alt="" />
               <h4>Açaí</h4>
               <h5>Açaí com Frutas</h5>
@@ -138,18 +138,18 @@
         </div>
       </div>
       <div class="confirmar-pedido escondido">
-          <p class="titulo">Confirme seu pedido</p>
+        <p class="titulo">Confirme seu pedido</p>
         <div class="alinhar">
         <p class="pedido">aaaaaaa</p>
-        <p class="pedido">R$</p>
+        <p class="valor">R$</p>
       </div>
       <div class="alinhar">
         <p class="pedido">gggggggggg</p>
-        <p class="pedido">R$</p>
+        <p class="valor">R$</p>
       </div>
       <div class="alinhar">
         <p class="pedido">sdfsdfsd</p>
-        <p class="pedido">R$</p>
+        <p class="valor">R$</p>
       </div>
       <div class="alinhar">
         <p class="total">TOTAL</p>
