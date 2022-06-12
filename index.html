@@ -25,7 +25,7 @@
         <div class="menu-pratos">
           <h3>Primeiro, seu prato</h3>
           <div class="container">
-            <div class="pratos selecionar" onclick="opcao1(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao1(); fecharPedido(); imprimirPrato();">
               <img src="./imagens.projeto3/frango_yin_yang 1.png" alt="" />
               <h4>Executivo picanha</h4>
               <h5>Arroz, Feijão, Farofa, Fritas e picanha</h5>
@@ -34,7 +34,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao2(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao2(); fecharPedido(); imprimirPrato()">
               <img
                 src="./imagens.projeto3/Estrogonofe-frango-Baixa-2.jpg"
                 alt=""
@@ -46,7 +46,7 @@
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao3(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao3(); fecharPedido(); imprimirPrato()">
               <img src="./imagens.projeto3/macarrao_com_calabresa.jpg" alt="" />
               <h4>Macarrão</h4>
               <h5>Macarrão, Calabresa e Molho sugo</h5>
@@ -71,7 +71,7 @@
             </div>
             <div class="pratos selecionar" onclick="opcao5(); fecharPedido();">
               <img src="./imagens.projeto3/garrafadagua.jpg" alt="" />
-              <h4>tipo</h4>
+              <h4>Água</h4>
               <h5>Garrafinha de 500ml</h5>
               <div>
                 <h6>R$3,90</h6>
@@ -160,7 +160,9 @@
       </div>
         <p class="cancelar" onclick="cancelarPedido()">Cancelar</p>
       </div>
+      <div class="fosco escondido"></div>
     </div>
+    
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./codigo.js"></script>
   </body>

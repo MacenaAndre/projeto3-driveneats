@@ -145,17 +145,18 @@ ion-icon {
   background-color: #50D074;
   color: #ffffff;
   border-radius: 9px;
-  width: 90%;
-  max-width: 542px;
+  width: 87%;
+  max-width: 550px;
   height: 340px;
   position: fixed;
   left: 28px;
-  top: 300px;
+  top: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 5% 8%;
   box-sizing: border-box;
+  z-index: 3;
 }
 .titulo {
   font-size: 22px;
@@ -210,4 +211,14 @@ text-align: left;
 }
 .selecionar-icone {
   color: #32B72F;
+}
+.fosco {
+  width: 100%;
+  max-width: 612px;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.9;
+  z-index: 2; position: fixed;
+  top: 0px;
+  left: 0px;
 }
