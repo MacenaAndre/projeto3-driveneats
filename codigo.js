@@ -30,7 +30,7 @@
     const borda = document.querySelector(".menu-pratos:first-child .pratos:nth-child(3)");
     const icone = document.querySelector(".menu-pratos:first-child .pratos:nth-child(3) ion-icon");
     borda.classList.toggle("selecionar");
-    icone.classList.toggle("selecionar-icone");
+    icone.classList.remove("selecionar-icone");
     const x = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2)");
     const y = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) ion-icon");
     x.classList.add("selecionar");
@@ -133,20 +133,26 @@
     const bebida3 = document.querySelector(".menu-pratos:nth-child(2) .selceionar:nth-child(3)");
     const sobremesa1 = document.querySelector(".menu-pratos:last-child .selecionar:first-child");
     const sobremesa2 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(2)");
-    const sobremesa3 = document.querySelector(".menu-pratos:last-child .selecionar:last-child");
+    const sobremesa3 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(3)");
 
-    if(prato1 === null || prato2 === null || prato3 === null) {
-        if(bebida1 === null || bebida2 === null || bebida3 === null) {
-            if(sobremesa1 === null || sobremesa2 === null || sobremesa3 === null) {
+    if((prato1 === null || prato2 === null || prato3 === null) &&
+        (bebida1 === null || bebida2 === null || bebida3 === null) &&
+            (sobremesa1 === null || sobremesa2 === null || sobremesa3 === null)) {
                 document.querySelector(".aguardar-pedido").classList.add("escondido");
                 document.querySelector(".fechar-pedido").classList.remove("escondido");
+       
             } else {
                 document.querySelector(".aguardar-pedido").classList.remove("escondido");
                 document.querySelector(".fechar-pedido").classList.add("escondido");
             }
-        }
-    }
-    
-  }  
-  
+  }
+  function confirmarPedido() {
+    document.querySelector(".confirmar-pedido").classList.remove("escondido");
+  }
+  function cancelarPedido() {
+    document.querySelector(".confirmar-pedido").classList.add("escondido");
+  }
+
+
+
   
