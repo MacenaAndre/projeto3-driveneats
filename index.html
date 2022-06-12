@@ -30,11 +30,11 @@
               <h4>Executivo picanha</h4>
               <h5>Arroz, Feijão, Farofa, Fritas e picanha</h5>
               <div>
-                <h6>R$14,90</h6>
+                <h6>R$ <span>14,90</span><span class="preco-calculavel">14.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao2(); fecharPedido(); imprimirPrato()">
+            <div class="pratos selecionar" onclick="opcao2(); fecharPedido(); imprimirPrato();">
               <img
                 src="./imagens.projeto3/Estrogonofe-frango-Baixa-2.jpg"
                 alt=""
@@ -42,7 +42,7 @@
               <h4>Strogonoff Frango</h4>
               <h5>Strogonoff, Arroz e Batata-palha</h5>
               <div>
-                <h6>R$16,90</h6>
+                <h6>R$ <span>16,90</span><span class="preco-calculavel">16.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
@@ -51,7 +51,7 @@
               <h4>Macarrão</h4>
               <h5>Macarrão, Calabresa e Molho sugo</h5>
                <div>
-                <h6>R$12,90</h6>
+                <h6>R$ <span>12,90</span><span class="preco-calculavel">12.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
@@ -60,30 +60,30 @@
         <div class="menu-pratos">
           <h3>Agora, sua bebida</h3>
           <div class="container">
-            <div class="pratos selecionar" onclick="opcao4(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao4(); fecharPedido(); imprimirBebida()">
               <img src="./imagens.projeto3/coquinha_gelada 1.png" alt="" />
               <h4>Coquinha gelada</h4>
               <h5>Latinha de 350ml</h5>
               <div>
-                <h6>R$6,90</h6>
+                <h6>R$ <span>6,90</span><span class="preco-calculavel">6.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao5(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao5(); fecharPedido(); imprimirBebida()">
               <img src="./imagens.projeto3/garrafadagua.jpg" alt="" />
               <h4>Água</h4>
               <h5>Garrafinha de 500ml</h5>
               <div>
-                <h6>R$3,90</h6>
+                <h6>R$ <span>3,90</span><span class="preco-calculavel">3.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao6(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao6(); fecharPedido(); imprimirBebida()">
               <img src="./imagens.projeto3/laranjinha.jpg" alt="" />
               <h4>Suco</h4>
               <h5>Suco de Laranja</h5>
               <div>
-                <h6>5,90</h6>
+                <h6>R$ <span>5,90</span><span class="preco-calculavel">5.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
@@ -92,16 +92,16 @@
         <div class="menu-pratos">
           <h3>Por fim, sua sobremesa</h3>
           <div class="container">
-            <div class="pratos selecionar" onclick="opcao7(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao7(); fecharPedido(); imprimirSobremesa()">
               <img src="./imagens.projeto3/pudim 1.png" alt="" />
               <h4>Pudim</h4>
               <h5>Maravilhoso Pudim</h5>
               <div>
-                <h6>R$4,90</h6>
+                <h6>R$ <span>4,90</span><span class="preco-calculavel">4.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao8(); fecharPedido();">
+            <div class="pratos selecionar" onclick="opcao8(); fecharPedido(); imprimirSobremesa()">
               <img
                 src="./imagens.projeto3/torta-mousse-de-chocolate.jpg"
                 alt=""
@@ -109,16 +109,16 @@
               <h4>Torta de Chocolate</h4>
               <h5>Fatia de 250g</h5>
               <div>
-                <h6>R$8,90</h6>
+                <h6>R$ <span>8,90</span><span class="preco-calculavel">8.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="pratos selecionar" onclick="opcao9(); fecharPedido()">
+            <div class="pratos selecionar" onclick="opcao9(); fecharPedido(); imprimirSobremesa()">
               <img src="./imagens.projeto3/copos-acai.jpg" alt="" />
               <h4>Açaí</h4>
               <h5>Açaí com Frutas</h5>
               <div>
-                <h6>R$7,90</h6>
+                <h6>R$ <span>7,90</span><span class="preco-calculavel">7.9</span></h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
@@ -131,7 +131,7 @@
           Selecione os 3 itens para fechar o pedido
         </p>
         </div>
-        <div class="fechar-pedido escondido"  onclick="confirmarPedido()">
+        <div class="fechar-pedido escondido"  onclick="confirmarPedido(); calculaTotal()">
           <p>
           Fechar pedido
         </p>
@@ -140,16 +140,16 @@
       <div class="confirmar-pedido escondido">
         <p class="titulo">Confirme seu pedido</p>
         <div class="alinhar">
-        <p class="pedido">aaaaaaa</p>
-        <p class="valor">R$</p>
+        <p class="pedido">prato1</p>
+        <p class="valor">R$1</p>
       </div>
       <div class="alinhar">
-        <p class="pedido">gggggggggg</p>
-        <p class="valor">R$</p>
+        <p class="pedido">prato2</p>
+        <p class="valor">R$2</p>
       </div>
       <div class="alinhar">
-        <p class="pedido">sdfsdfsd</p>
-        <p class="valor">R$</p>
+        <p class="pedido">prato3</p>
+        <p class="valor">R$3</p>
       </div>
       <div class="alinhar">
         <p class="total">TOTAL</p>

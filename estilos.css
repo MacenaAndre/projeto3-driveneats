@@ -166,10 +166,6 @@ ion-icon {
   max-width: 550px;
  
 }
-.pedido .valor {
-  font-size: 22px;
-  font-weight: 400;
-}
 .total {
 font-size: 22px;
 font-weight: 700;
@@ -221,4 +217,15 @@ text-align: left;
   z-index: 2; position: fixed;
   top: 0px;
   left: 0px;
+}
+.pedido {
+   font-size: 22px;
+   font-weight: 400;
+}
+.valor {
+  font-size: 22px;
+  font-weight: 400;
+}
+.preco-calculavel {
+  display: none;
 }

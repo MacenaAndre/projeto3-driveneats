@@ -1,8 +1,8 @@
   function opcao1() {
     const borda = document.querySelector(".menu-pratos:first-child .pratos:first-child");
     const icone = document.querySelector(".menu-pratos:first-child .pratos:first-child ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2)");
     const y = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) ion-icon");
     x.classList.add("selecionar");
@@ -15,8 +15,8 @@
   function opcao2() {
     const borda = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2)");
     const icone = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:first-child .pratos:first-child");
     const y = document.querySelector(".menu-pratos:first-child .pratos:first-child ion-icon");
     x.classList.add("selecionar");
@@ -29,8 +29,8 @@
   function opcao3() {
     const borda = document.querySelector(".menu-pratos:first-child .pratos:nth-child(3)");
     const icone = document.querySelector(".menu-pratos:first-child .pratos:nth-child(3) ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2)");
     const y = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) ion-icon");
     x.classList.add("selecionar");
@@ -43,8 +43,8 @@
   function opcao4() {
     const borda = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child");
     const icone = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2)");
     const y = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) ion-icon");
     x.classList.add("selecionar");
@@ -57,8 +57,8 @@
   function opcao5() {
     const borda = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2)");
     const icone = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child");
     const y = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child ion-icon");
     x.classList.add("selecionar");
@@ -71,8 +71,8 @@
   function opcao6() {
     const borda = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(3)");
     const icone = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(3) ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child");
     const y = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child ion-icon");
     x.classList.add("selecionar");
@@ -85,8 +85,8 @@
   function opcao7() {
     const borda = document.querySelector(".menu-pratos:last-child .pratos:first-child");
     const icone = document.querySelector(".menu-pratos:last-child .pratos:first-child ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:last-child .pratos:nth-child(2)");
     const y = document.querySelector(".menu-pratos:last-child .pratos:nth-child(2) ion-icon");
     x.classList.add("selecionar");
@@ -99,8 +99,8 @@
   function opcao8() {
     const borda = document.querySelector(".menu-pratos:last-child .pratos:nth-child(2)");
     const icone = document.querySelector(".menu-pratos:last-child .pratos:nth-child(2) ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:last-child .pratos:first-child");
     const y = document.querySelector(".menu-pratos:last-child .pratos:first-child ion-icon");
     x.classList.add("selecionar");
@@ -113,8 +113,8 @@
   function opcao9() {
     const borda = document.querySelector(".menu-pratos:last-child .pratos:last-child");
     const icone = document.querySelector(".menu-pratos:last-child .pratos:last-child ion-icon");
-    borda.classList.remove("selecionar");
-    icone.classList.add("selecionar-icone");
+    borda.classList.toggle("selecionar");
+    icone.classList.toggle("selecionar-icone");
     const x = document.querySelector(".menu-pratos:last-child .pratos:first-child");
     const y = document.querySelector(".menu-pratos:last-child .pratos:first-child ion-icon");
     x.classList.add("selecionar");
@@ -128,22 +128,23 @@
     const prato1 = document.querySelector(".menu-pratos:first-child .selecionar:first-child");
     const prato2 = document.querySelector(".menu-pratos:first-child .selecionar:nth-child(2)");
     const prato3 = document.querySelector(".menu-pratos:first-child .selecionar:nth-child(3)");
-    const bebida1 = document.querySelector(".menu-pratos:nth-child(2) .selcionar:first-child");
+    const bebida1 = document.querySelector(".menu-pratos:nth-child(2) .selecionar:first-child");
     const bebida2 = document.querySelector(".menu-pratos:nth-child(2) .selecionar:nth-child(2)");
-    const bebida3 = document.querySelector(".menu-pratos:nth-child(2) .selceionar:nth-child(3)");
+    const bebida3 = document.querySelector(".menu-pratos:nth-child(2) .selecionar:nth-child(3)");
     const sobremesa1 = document.querySelector(".menu-pratos:last-child .selecionar:first-child");
     const sobremesa2 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(2)");
     const sobremesa3 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(3)");
 
-    if((prato1 === null || prato2 === null || prato3 === null) &&
-       (bebida1 === null || bebida2 === null || bebida3 === null) &&
+    if((prato1 === null || prato2 === null || prato3 === null) && 
+         (bebida1 === null || bebida2 === null || bebida3 === null) && 
             (sobremesa1 === null || sobremesa2 === null || sobremesa3 === null)) {
                 document.querySelector(".aguardar-pedido").classList.add("escondido");
                 document.querySelector(".fechar-pedido").classList.remove("escondido");
-          
-            } 
+            } else {
+              document.querySelector(".aguardar-pedido").classList.remove("escondido");
+                document.querySelector(".fechar-pedido").classList.add("escondido");
+            }
   }
-          
   function confirmarPedido() {
     document.querySelector(".confirmar-pedido").classList.remove("escondido");
     document.querySelector(".fosco").classList.remove("escondido");
@@ -159,24 +160,137 @@
           const strogonoff = prato2.innerHTML;
           const prato3 = document.querySelector(".menu-pratos:first-child .pratos:last-child h4");
           const macarrrao = prato3.innerHTML
-          const precoprato1 = document.querySelector(".menu-pratos:first-child .pratos:first-child h6");
+          const precoprato1 = document.querySelector(".menu-pratos:first-child .pratos:first-child h6 span");
           const precopicanha = precoprato1.innerHTML;
-          const precoprato2 = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) h6");
+          const precoprato2 = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) h6 span");
           const precostrogonoff = precoprato2.innerHTML;
-          const precoprato3 = document.querySelector(".menu-pratos:first-child .pratos:last-child h6");
+          const precoprato3 = document.querySelector(".menu-pratos:first-child .pratos:last-child h6 span");
           const precomacarrrao = precoprato3.innerHTML
 
           if(document.querySelector(".menu-pratos:first-child .selecionar:first-child") === null) {
-                document.querySelector(".confirmar-pedido .pedido:first-child").innerHTML = picanha;
+                document.querySelector(".confirmar-pedido .pedido").innerHTML = picanha;
                 document.querySelector(".confirmar-pedido .valor").innerHTML = precopicanha;
           } else if((document.querySelector(".menu-pratos:first-child .selecionar:nth-child(2)") === null)) {
-                document.querySelector(".confirmar-pedido .pedido:first-child").innerHTML = strogonoff;
+                document.querySelector(".confirmar-pedido .pedido").innerHTML = strogonoff;
                 document.querySelector(".confirmar-pedido .valor").innerHTML = precostrogonoff;
           } else if((document.querySelector(".menu-pratos:first-child .selecionar:last-child") === null)) {
-                document.querySelector(".confirmar-pedido .pedido:first-child").innerHTML = macarrrao;
+                document.querySelector(".confirmar-pedido .pedido").innerHTML = macarrrao;
                 document.querySelector(".confirmar-pedido .valor").innerHTML = precomacarrrao;
   }
   }
+  function imprimirBebida() {
+    const prato1 = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child h4");
+          const coca = prato1.innerHTML;
+          const prato2 = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) h4");
+          const agua = prato2.innerHTML;
+          const prato3 = document.querySelector(".menu-pratos:nth-child(2) .pratos:last-child h4");
+          const suco = prato3.innerHTML
+          const precoprato1 = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child h6 span");
+          const precococa = precoprato1.innerHTML;
+          const precoprato2 = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) h6 span");
+          const precoagua = precoprato2.innerHTML;
+          const precoprato3 = document.querySelector(".menu-pratos:nth-child(2) .pratos:last-child h6 span");
+          const precosuco = precoprato3.innerHTML
 
+          if(document.querySelector(".menu-pratos:nth-child(2) .selecionar:first-child") === null) {
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .pedido").innerHTML = coca;
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .valor").innerHTML = precococa;
+          } else if((document.querySelector(".menu-pratos:nth-child(2) .selecionar:nth-child(2)") === null)) {
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .pedido").innerHTML = agua;
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .valor").innerHTML = precoagua;
+          } else if((document.querySelector(".menu-pratos:nth-child(2) .selecionar:last-child") === null)) {
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .pedido").innerHTML = suco;
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .valor").innerHTML = precosuco;
+  }
+  }
+  function imprimirSobremesa() {
+    const prato1 = document.querySelector(".menu-pratos:nth-child(3) .pratos:first-child h4");
+          const pudim = prato1.innerHTML;
+          const prato2 = document.querySelector(".menu-pratos:nth-child(3) .pratos:nth-child(2) h4");
+          const torta = prato2.innerHTML;
+          const prato3 = document.querySelector(".menu-pratos:nth-child(3) .pratos:last-child h4");
+          const acai = prato3.innerHTML
+          const precoprato1 = document.querySelector(".menu-pratos:nth-child(3) .pratos:first-child h6 span");
+          const precopudim = precoprato1.innerHTML;
+          const precoprato2 = document.querySelector(".menu-pratos:nth-child(3) .pratos:nth-child(2) h6 span");
+          const precotorta = precoprato2.innerHTML;
+          const precoprato3 = document.querySelector(".menu-pratos:nth-child(3) .pratos:last-child h6 span");
+          const precoacai = precoprato3.innerHTML
+
+          if(document.querySelector(".menu-pratos:nth-child(3) .selecionar:first-child") === null) {
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .pedido").innerHTML = pudim;
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .valor").innerHTML = precopudim;
+          } else if((document.querySelector(".menu-pratos:nth-child(3) .selecionar:nth-child(2)") === null)) {
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .pedido").innerHTML = torta;
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .valor").innerHTML = precotorta;
+          } else if((document.querySelector(".menu-pratos:nth-child(3) .selecionar:last-child") === null)) {
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .pedido").innerHTML = acai;
+                document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .valor").innerHTML = precoacai;
+  }
+  }
+  function calculaTotal() {
+    const prato1 = document.querySelector(".menu-pratos:first-child .selecionar:first-child");
+    const prato2 = document.querySelector(".menu-pratos:first-child .selecionar:nth-child(2)");
+    const prato3 = document.querySelector(".menu-pratos:first-child .selecionar:nth-child(3)");
+    const bebida1 = document.querySelector(".menu-pratos:nth-child(2) .selecionar:first-child");
+    const bebida2 = document.querySelector(".menu-pratos:nth-child(2) .selecionar:nth-child(2)");
+    const bebida3 = document.querySelector(".menu-pratos:nth-child(2) .seleceionar:nth-child(3)");
+    const sobremesa1 = document.querySelector(".menu-pratos:last-child .selecionar:first-child");
+    const sobremesa2 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(2)");
+    const sobremesa3 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(3)");
+    const preco1 = document.querySelector(".menu-pratos:first-child .pratos:first-child h6 span:last-child").innerHTML;
+    const preco2 = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) h6 span:last-child").innerHTML;
+    const preco3 = document.querySelector(".menu-pratos:first-child .pratos:last-child h6 span:last-child").innerHTML;
+    const preco4 = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child h6 span:last-child").innerHTML;
+    const preco5 = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) h6 span:last-child").innerHTML;
+    const preco6 = document.querySelector(".menu-pratos:nth-child(2) .pratos:last-child h6 span:last-child").innerHTML;
+    const preco7 = document.querySelector(".menu-pratos:nth-child(3) .pratos:first-child h6 span:last-child").innerHTML;
+    const preco8 = document.querySelector(".menu-pratos:nth-child(3) .pratos:nth-child(2) h6 span:last-child").innerHTML;
+    const preco9 = document.querySelector(".menu-pratos:nth-child(3) .pratos:last-child h6 span:last-child").innerHTML;
+    let prato = 0;
+    let bebida = 0;
+    let sobremesa = 0;
+    let total = prato + bebida + sobremesa;
+
+    if(prato1 === null)  {
+      prato = preco1;
+    } else if (prato2 === null) {
+      prato = preco2;
+    } else if (prato3 === null) {
+      prato = preco3;
+    }
+
+    if(bebida1 === null)  {
+      bebida = preco4;
+    } else if (bebida2 === null) {
+      bebida = preco5;
+    } else if (bebida3 === null) {
+      bebida = preco6;
+    }
+
+    if(sobremesa1 === null)  {
+      sobremesa = preco7;
+    } else if (sobremesa2 === null) {
+      sobremesa = preco8;
+    } else if (sobremesa3 === null) {
+      sobremesa = preco9;
+    }
+   console.log(sobremesa);
+   console.log(bebida);
+   console.log(prato);
+
+  }
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+
+
+  
 
   
