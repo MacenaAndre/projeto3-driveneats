@@ -238,19 +238,20 @@
     const sobremesa1 = document.querySelector(".menu-pratos:last-child .selecionar:first-child");
     const sobremesa2 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(2)");
     const sobremesa3 = document.querySelector(".menu-pratos:last-child .selecionar:nth-child(3)");
-    const preco1 = document.querySelector(".menu-pratos:first-child .pratos:first-child h6 span:last-child").innerHTML;
-    const preco2 = document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) h6 span:last-child").innerHTML;
-    const preco3 = document.querySelector(".menu-pratos:first-child .pratos:last-child h6 span:last-child").innerHTML;
-    const preco4 = document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child h6 span:last-child").innerHTML;
-    const preco5 = document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) h6 span:last-child").innerHTML;
-    const preco6 = document.querySelector(".menu-pratos:nth-child(2) .pratos:last-child h6 span:last-child").innerHTML;
-    const preco7 = document.querySelector(".menu-pratos:nth-child(3) .pratos:first-child h6 span:last-child").innerHTML;
-    const preco8 = document.querySelector(".menu-pratos:nth-child(3) .pratos:nth-child(2) h6 span:last-child").innerHTML;
-    const preco9 = document.querySelector(".menu-pratos:nth-child(3) .pratos:last-child h6 span:last-child").innerHTML;
+    const preco1 = Number(document.querySelector(".menu-pratos:first-child .pratos:first-child h6 span:last-child").innerHTML);
+    const preco2 = Number(document.querySelector(".menu-pratos:first-child .pratos:nth-child(2) h6 span:last-child").innerHTML);
+    const preco3 = Number(document.querySelector(".menu-pratos:first-child .pratos:last-child h6 span:last-child").innerHTML);
+    const preco4 = Number(document.querySelector(".menu-pratos:nth-child(2) .pratos:first-child h6 span:last-child").innerHTML);
+    const preco5 = Number(document.querySelector(".menu-pratos:nth-child(2) .pratos:nth-child(2) h6 span:last-child").innerHTML);
+    const preco6 = Number(document.querySelector(".menu-pratos:nth-child(2) .pratos:last-child h6 span:last-child").innerHTML);
+    const preco7 = Number(document.querySelector(".menu-pratos:nth-child(3) .pratos:first-child h6 span:last-child").innerHTML);
+    const preco8 = Number(document.querySelector(".menu-pratos:nth-child(3) .pratos:nth-child(2) h6 span:last-child").innerHTML);
+    const preco9 = Number(document.querySelector(".menu-pratos:nth-child(3) .pratos:last-child h6 span:last-child").innerHTML);
+    let precototal = document.querySelector(".confirmar-pedido .total:last-child");
     let prato = 0;
     let bebida = 0;
     let sobremesa = 0;
-    let total = prato + bebida + sobremesa;
+    let total = 0;
 
     if(prato1 === null)  {
       prato = preco1;
@@ -275,22 +276,27 @@
     } else if (sobremesa3 === null) {
       sobremesa = preco9;
     }
-   console.log(sobremesa);
-   console.log(bebida);
-   console.log(prato);
-
+    
+    total = (prato+bebida+sobremesa).toFixed(2);
+    precototal.innerHTML = `R$ ${total}`;
   }
+  function linkZap() {
   
-  
-  
-  
-  
- 
-  
-  
-  
+    const prato =document.querySelector(".confirmar-pedido .pedido").innerHTML;
+    const bebida =document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .pedido").innerHTML;
+    const sobremesa =document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .pedido").innerHTML;
+    let total = document.querySelector(".confirmar-pedido .total:last-child").innerHTML;
+    let encode = encodeURIComponent("Olá, gostaria de fazer o pedido:" +
+      `
+      - Prato: ${prato}` +
+      `
+      - Bebida: ${bebida}` +
+      `
+      - Sobremesa: ${sobremesa}` +
+      `
+      Total: ${total}`);
 
+      window.open("https://wa.me/5521996433814?text=" + encode);
 
-  
-
+  } 
   
