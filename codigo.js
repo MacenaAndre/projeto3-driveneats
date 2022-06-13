@@ -286,15 +286,16 @@
     const bebida =document.querySelector(".confirmar-pedido .alinhar:nth-child(3) .pedido").innerHTML;
     const sobremesa =document.querySelector(".confirmar-pedido .alinhar:nth-child(4) .pedido").innerHTML;
     let total = document.querySelector(".confirmar-pedido .total:last-child").innerHTML;
-    let encode = encodeURIComponent("Olá, gostaria de fazer o pedido:" +
-      `
-      - Prato: ${prato}` +
-      `
-      - Bebida: ${bebida}` +
-      `
-      - Sobremesa: ${sobremesa}` +
-      `
-      Total: ${total}`);
+    let nome = prompt("Digite o seu nome");
+    let endereco = prompt("Digite o seu endereço");
+    let encode = encodeURIComponent(`Olá, gostaria de fazer o pedido:
+    - Prato: ${prato}
+    - Bebida: ${bebida}
+    - Sobremesa: ${sobremesa}
+    Total: ${total}
+    
+    Nome: ${nome}
+    Endereço: ${endereco}`);
 
       window.open("https://wa.me/5521996433814?text=" + encode);
 

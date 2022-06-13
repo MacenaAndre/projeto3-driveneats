@@ -42,10 +42,10 @@ body {
   z-index: 1;
 }
 .pratos img {
-  padding: 15px 14px 0px 14px;
+  padding: 14px;
   width: 144px;
   height: 87px;
-  border-radius: 25px 25px 22px 22px;
+  border-radius: 22px;
 }
 .pratos {
   background-color: #ffffff;
